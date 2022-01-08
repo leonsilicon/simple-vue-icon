@@ -64,7 +64,7 @@ The [path string](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d) 
 ### width/height (number or string; default: 24)
 
 ```vue
-  <v-icon :path="mdiArrowLeft" width="30" :height="30" />
+<v-icon :path="mdiArrowLeft" width="30" :height="30" />
 ```
 
 ### size (number or string; default: 24)
@@ -72,8 +72,8 @@ The [path string](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d) 
 Sets the width and the height of the icon
 
 ```vue
-	<!-- Equivalent to <v-icon :path="mdiArrowLeft" width="64" height="64" /> -->
-  <v-icon :path="mdiArrowLeft" size="64" />
+<!-- Equivalent to <v-icon :path="mdiArrowLeft" width="64" height="64" /> -->
+<v-icon :path="mdiArrowLeft" size="64" />
 ```
 
 ## Credits
