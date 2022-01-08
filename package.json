@@ -1,6 +1,6 @@
 {
 	"name": "simple-vue-icon",
-	"version": "1.1.7",
+	"version": "1.1.8",
 	"description": "A simple icon component for Vue 3",
 	"main": "./index.js",
 	"prettier": "@leonzalion/prettier-config",
