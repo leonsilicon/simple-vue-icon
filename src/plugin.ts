@@ -1,4 +1,4 @@
-import { h } from 'vue';
+import { h } from 'vue'; // eslint-disable-line import/named
 import type { Plugin, ExtractPropTypes } from 'vue';
 import { props as componentProps } from './props';
 import './icons.css';

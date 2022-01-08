@@ -27,18 +27,18 @@ Then, in your components, simply pass the path string:
 
 ```vue
 <template>
-	<v-icon :path='mdiArrowLeft' />
+  <v-icon :path='mdiArrowLeft' />
 </template>
 
 <script>
 import { mdiArrowLeft } from '@mdi/js';
 
 export default {
-	setup() {
-		return {
-			mdiArrowLeft,
-		};
-	}
+  setup() {
+    return {
+      mdiArrowLeft,
+    };
+  }
 };
 </script>
 ```
@@ -47,7 +47,7 @@ or using `<script setup>` (recommended):
 
 ```vue
 <template>
-	<v-icon :path='mdiArrowLeft' />
+  <v-icon :path='mdiArrowLeft' />
 </template>
 
 <script setup>

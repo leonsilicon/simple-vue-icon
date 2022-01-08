@@ -1,5 +1,5 @@
 module.exports = {
-	extends: ["@leonzalion/eslint-config"],
+	extends: [require.resolve('@leonzalion/configs/eslint')],
 	parserOptions: {
 		project: ["./tsconfig.eslint.json"],
 	},

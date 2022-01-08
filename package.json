@@ -3,7 +3,8 @@
 	"version": "1.1.8",
 	"description": "A simple icon component for Vue 3",
 	"main": "./index.js",
-	"prettier": "@leonzalion/prettier-config",
+	"prettier": "@leonzalion/configs/prettier",
+	"commitlint": "@leonzalion/configs/commitlint",
 	"np": {
 		"tests": false,
 		"cleanup": false,
@@ -37,10 +38,8 @@
 		"release": "np && pnpm build && pnpm publish"
 	},
 	"devDependencies": {
-		"@leonzalion/eslint-config": "latest",
-		"@leonzalion/markdownlint-config": "latest",
-		"@leonzalion/prettier-config": "latest",
-		"@leonzalion/tsconfig": "^1.0.11",
+		"@leonzalion/configs": "^1.0.3",
+		"@leonzalion/eslint-config": "^1.0.51",
 		"@mdi/js": "^6.5.95",
 		"@types/jest": "^27.4.0",
 		"@types/node": "^17.0.8",
