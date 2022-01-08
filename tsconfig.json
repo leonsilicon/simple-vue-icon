@@ -1,0 +1,15 @@
+{
+	"extends": "@leonzalion/tsconfig/tsconfig.json",
+	"compilerOptions": {
+		"lib": [
+			"ESNext",
+			"DOM",
+			"DOM.Iterable"
+		],
+		"outDir": "dist",
+		"baseUrl": "./src",
+	},
+	"include": [
+		"./src"
+	]
+}
