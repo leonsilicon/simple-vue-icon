@@ -5,7 +5,7 @@ export const props = {
 	height: [Number, String],
 	ariaLabel: [String],
 	class: [String],
-	data: {
+	path: {
 		type: String,
 	},
 	size: {
@@ -14,14 +14,14 @@ export const props = {
 	},
 	viewBox: {
 		type: String,
-		default: "0 0 24 24",
+		default: '0 0 24 24',
 	},
 	xmlns: {
 		type: String,
-		default: "http://www.w3.org/2000/svg",
+		default: 'http://www.w3.org/2000/svg',
 	},
 	role: {
 		type: String,
-		default: "img",
+		default: 'img',
 	},
 };
