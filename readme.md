@@ -15,8 +15,8 @@ pnpm add simple-vue-icon
 Then, add the plugin to where you create your Vue instance:
 
 ```typescript
-import { createApp } from 'vue'
-import simpleVueIcon from 'simple-vue-icon'
+import { createApp } from 'vue';
+import simpleVueIcon from 'simple-vue-icon';
 
 const app = createApp();
 app.use(simpleVueIcon);
