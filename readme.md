@@ -1,6 +1,6 @@
 # simple-vue-icon
 
-![npm](https://img.shields.io/npm/dw/simple-vue-icon)
+[![npm version](https://badge.fury.io/js/simple-vue-icon.svg)](https://badge.fury.io/js/simple-vue-icon)
 
 A simple icon component for Vue 3.
 
