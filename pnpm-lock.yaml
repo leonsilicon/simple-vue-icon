@@ -5,13 +5,11 @@ importers:
   .:
     specifiers:
       '@leonzalion/configs': ^1.0.3
-      '@leonzalion/eslint-config': ^1.0.51
       '@mdi/js': ^6.5.95
       '@types/jest': ^27.4.0
       '@types/node': ^17.0.8
       '@vue/test-utils': ^2.0.0-rc.18
       eslint: ^8.6.0
-      execa: ^6.0.0
       jest: ^27.4.7
       np: ^7.6.0
       prettier: ^2.5.1
@@ -21,13 +19,11 @@ importers:
       vue: ^3
     devDependencies:
       '@leonzalion/configs': 1.0.3_766453c47335cbed2174775e7834db5c
-      '@leonzalion/eslint-config': 1.0.51_eslint@8.6.0+typescript@4.5.4
       '@mdi/js': 6.5.95
       '@types/jest': 27.4.0
       '@types/node': 17.0.8
       '@vue/test-utils': 2.0.0-rc.18_vue@3.2.26
       eslint: 8.6.0
-      execa: 6.0.0
       jest: 27.4.7_ts-node@10.4.0
       np: 7.6.0
       prettier: 2.5.1
@@ -658,35 +654,6 @@ packages:
       xo: 0.47.0
     transitivePeerDependencies:
       - prettier
-      - supports-color
-      - typescript
-      - webpack
-    dev: true
-
-  /@leonzalion/eslint-config/1.0.51_eslint@8.6.0+typescript@4.5.4:
-    resolution: {integrity: sha512-ZLcR5NVbx4w+lkIXueOaVW1vYkLqTgHUZCZpV3yHP5gozFYrjk8iiiL4rrVMZ3DZQGVmumBYC6HqI3xw003m4Q==}
-    peerDependencies:
-      eslint: ^8.4.0
-    dependencies:
-      '@rushstack/eslint-patch': 1.1.0
-      '@typescript-eslint/eslint-plugin': 5.9.0_bd2fd93dbcc607ad2f21b784bccfe0c8
-      '@typescript-eslint/parser': 5.9.0_eslint@8.6.0+typescript@4.5.4
-      eslint: 8.6.0
-      eslint-config-airbnb-base: 15.0.0_b5a36b8c1535387c8dd00eff7ec6b551
-      eslint-config-prettier: 8.3.0_eslint@8.6.0
-      eslint-config-xo: 0.39.0_eslint@8.6.0
-      eslint-config-xo-typescript: 0.47.1_50718c277c711d46fdc0916b9b606e5d
-      eslint-define-config: 1.2.2
-      eslint-import-resolver-alias: 1.1.2_eslint-plugin-import@2.25.4
-      eslint-plugin-eslint-comments: 3.2.0_eslint@8.6.0
-      eslint-plugin-import: 2.25.4_eslint@8.6.0
-      eslint-plugin-no-use-extend-native: 0.5.0
-      eslint-plugin-node: 11.1.0_eslint@8.6.0
-      eslint-plugin-simple-import-sort: 7.0.0_eslint@8.6.0
-      eslint-plugin-unicorn: 39.0.0_eslint@8.6.0
-      eslint-plugin-vue: 8.2.0_eslint@8.6.0
-      xo: 0.47.0
-    transitivePeerDependencies:
       - supports-color
       - typescript
       - webpack
