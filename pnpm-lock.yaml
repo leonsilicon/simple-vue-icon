@@ -14,7 +14,7 @@ importers:
       execa: ^6.0.0
       jest: ^27.4.7
       lint-staged: ^12.1.7
-      lionp: ^1.0.10
+      lionp: ^1.0.11
       np: ^7.6.0
       prettier: ^2.5.1
       simple-git-hooks: ^2.7.0
@@ -35,7 +35,7 @@ importers:
       execa: 6.0.0
       jest: 27.4.7_ts-node@10.4.0
       lint-staged: 12.1.7
-      lionp: 1.0.10
+      lionp: 1.0.11
       np: 7.6.0
       prettier: 2.5.1
       simple-git-hooks: 2.7.0
@@ -3958,8 +3958,8 @@ packages:
       - enquirer
     dev: true
 
-  /lionp/1.0.10:
-    resolution: {integrity: sha512-cQrNGisxP1UlU2OzynOFWqb89dOiP/4LUKubL48TgYgRUknR6HtkieQHQmfcorZMVdltaeJ3I/+iIHXCOO+9Lw==}
+  /lionp/1.0.11:
+    resolution: {integrity: sha512-i1/Otuj+KJ4wGp5nUVvDMIIpUYSKYPv663bhp/rfLYYM8vNctr/sJ2fUgFjDupSj5OBcT38zWkEzn7d5XXfw+w==}
     engines: {git: '>=2.11.0', node: '>=10', npm: '>=6.8.0'}
     hasBin: true
     dependencies:
@@ -3970,6 +3970,7 @@ packages:
       enquirer: 2.3.6
       escape-goat: 4.0.0
       escape-string-regexp: 5.0.0
+      execa: 6.0.0
       github-url-from-git: 1.5.0
       hosted-git-info: 4.1.0
       ignore-walk: 4.0.1
