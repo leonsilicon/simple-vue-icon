@@ -48,6 +48,7 @@
 		"execa": "^6.0.0",
 		"jest": "^27.4.7",
 		"lint-staged": "^12.1.7",
+		"lionp": "^1.0.10",
 		"np": "^7.6.0",
 		"prettier": "^2.5.1",
 		"simple-git-hooks": "^2.7.0",
