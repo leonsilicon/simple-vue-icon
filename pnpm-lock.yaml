@@ -14,7 +14,7 @@ importers:
       execa: ^6.0.0
       jest: ^27.4.7
       lint-staged: ^12.1.7
-      lionp: ^1.0.11
+      lionp: ^1.0.12
       np: ^7.6.0
       prettier: ^2.5.1
       simple-git-hooks: ^2.7.0
@@ -35,7 +35,7 @@ importers:
       execa: 6.0.0
       jest: 27.4.7_ts-node@10.4.0
       lint-staged: 12.1.7
-      lionp: 1.0.11
+      lionp: 1.0.12
       np: 7.6.0
       prettier: 2.5.1
       simple-git-hooks: 2.7.0
@@ -3958,8 +3958,8 @@ packages:
       - enquirer
     dev: true
 
-  /lionp/1.0.11:
-    resolution: {integrity: sha512-i1/Otuj+KJ4wGp5nUVvDMIIpUYSKYPv663bhp/rfLYYM8vNctr/sJ2fUgFjDupSj5OBcT38zWkEzn7d5XXfw+w==}
+  /lionp/1.0.12:
+    resolution: {integrity: sha512-G/GwvrjW9pdBmy8zhgMSQxegCOsB9uromznQ3SBjOPRkykq3T6EusjH7nVb4bH81LynKljA9hGqU6PTdYsbEGg==}
     engines: {git: '>=2.11.0', node: '>=10', npm: '>=6.8.0'}
     hasBin: true
     dependencies:
