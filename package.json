@@ -4,11 +4,10 @@
 	"description": "A simple icon component for Vue 3",
 	"main": "./index.js",
 	"prettier": "@leonzalion/configs/prettier",
-	"commitlint": "@leonzalion/configs/commitlint",
-	"np": {
-		"tests": false,
-		"cleanup": false,
-		"publish": false
+	"commitlint": {
+		"extends": [
+			"@leonzalion/configs/commitlint"
+		]
 	},
 	"repository": "git@github.com:leonzalion/simple-vue-icon.git",
 	"homepage": "https://github.com/leonzalion/simple-vue-icon",
@@ -30,30 +29,48 @@
 	"author": "Leon Si <contact@leonzalion.com>",
 	"license": "MIT",
 	"scripts": {
-		"lint": "eslint --cache --fix src",
+		"lint": "eslint --cache --fix .",
+		"prepare": "simple-git-hooks",
 		"prettier": "prettier --write src",
 		"tc": "tsc --noEmit",
-		"build": "node --loader ts-node/esm ./scripts/build.ts",
+		"build": "node-ts ./scripts/build.ts",
 		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
-		"release": "np && pnpm build && pnpm publish"
+		"release": "lionp"
 	},
 	"devDependencies": {
-		"@leonzalion/configs": "^1.0.3",
+		"@commitlint/cli": "^16.0.2",
+		"@leonzalion/configs": "link:../configs/dist",
 		"@mdi/js": "^6.5.95",
 		"@types/jest": "^27.4.0",
 		"@types/node": "^17.0.8",
 		"@vue/test-utils": "^2.0.0-rc.18",
 		"eslint": "^8.6.0",
+		"execa": "^6.0.0",
 		"jest": "^27.4.7",
+		"lint-staged": "^12.1.7",
 		"np": "^7.6.0",
 		"prettier": "^2.5.1",
+		"simple-git-hooks": "^2.7.0",
 		"ts-jest": "^27.1.2",
+		"ts-jest-resolver": "^2.0.0",
 		"ts-node": "^10.4.0",
+		"tsm": "^2.2.1",
 		"typescript": "^4.5.4",
 		"vue": "^3"
 	},
 	"peerDependencies": {
 		"vue": "^3"
+	},
+	"lint-staged": {
+		"*.{js,ts,vue}": [
+			"pnpm run lint",
+			"pnpm run prettier"
+		]
+	},
+	"simple-git-hooks": {
+		"pre-commit": "pnpm exec node-ts ./scripts/hooks/pre-commit.ts",
+		"pre-push": "pnpm exec node-ts ./scripts/hooks/pre-push.ts",
+		"commit-msg": "pnpm exec node-ts ./scripts/hooks/commit-msg.ts $@"
 	},
 	"publishConfig": {
 		"directory": "dist"

@@ -1,6 +1,6 @@
 import { h } from 'vue'; // eslint-disable-line import/named
 import type { Plugin, ExtractPropTypes } from 'vue';
-import { props as componentProps } from './props';
+import { props as componentProps } from './props.js';
 import './icons.css';
 
 const mdiAlert = 'M13 14H11V9H13M13 18H11V16H13M1 21H23L12 2L1 21Z';

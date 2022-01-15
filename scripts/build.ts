@@ -1,5 +1,5 @@
+import * as fs from 'node:fs';
 import { execaCommandSync as exec } from 'execa';
-import * as fs from 'fs';
 
 fs.rmSync('dist', { recursive: true, force: true });
 exec('tsc');

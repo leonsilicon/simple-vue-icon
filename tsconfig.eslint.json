@@ -1,6 +1,9 @@
 {
 	"extends": "./tsconfig.json",
 	"include": [
-		"./src"
+		"src",
+		"scripts",
+		".eslintrc.cjs",
+		"jest.config.mjs"
 	]
 }

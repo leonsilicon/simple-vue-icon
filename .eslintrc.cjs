@@ -1,6 +1,8 @@
+const path = require('path');
+
 module.exports = {
 	extends: [require.resolve('@leonzalion/configs/eslint')],
 	parserOptions: {
-		project: ["./tsconfig.eslint.json"],
+		project: [path.resolve(__dirname, "./tsconfig.eslint.json")],
 	},
 };
