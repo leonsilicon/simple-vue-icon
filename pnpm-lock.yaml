@@ -14,7 +14,7 @@ importers:
       execa: ^6.0.0
       jest: ^27.4.7
       lint-staged: ^12.1.7
-      lionp: ^1.0.12
+      lionp: ^1.0.15
       np: ^7.6.0
       prettier: ^2.5.1
       simple-git-hooks: ^2.7.0
@@ -35,7 +35,7 @@ importers:
       execa: 6.0.0
       jest: 27.4.7_ts-node@10.4.0
       lint-staged: 12.1.7
-      lionp: 1.0.12
+      lionp: 1.0.15
       np: 7.6.0
       prettier: 2.5.1
       simple-git-hooks: 2.7.0
@@ -3958,8 +3958,14 @@ packages:
       - enquirer
     dev: true
 
-  /lionp/1.0.12:
-    resolution: {integrity: sha512-G/GwvrjW9pdBmy8zhgMSQxegCOsB9uromznQ3SBjOPRkykq3T6EusjH7nVb4bH81LynKljA9hGqU6PTdYsbEGg==}
+  /lion-system/1.0.9:
+    resolution: {integrity: sha512-kOomq2SrAljYpUkzzXHAors4Bibe9+sP51uGSyfi2ilYCx6e0scHiYg3t6oyhWhr4276QjIbjNGwkBEylAB1ww==}
+    dependencies:
+      pkg-up: 4.0.0
+    dev: true
+
+  /lionp/1.0.15:
+    resolution: {integrity: sha512-a1IK4x3TAw8V2uuRHmKJGy8qtCGZroa2kIyxwKawCVYP3m383V7orwxwPAeHB/piUL4P/cft/M6UGeVXoG1XRg==}
     engines: {git: '>=2.11.0', node: '>=10', npm: '>=6.8.0'}
     hasBin: true
     dependencies:
@@ -3978,6 +3984,7 @@ packages:
       is-interactive: 2.0.0
       is-scoped: 3.0.0
       issue-regex: 4.0.0
+      lion-system: 1.0.9
       listr2: 3.14.0_enquirer@2.3.6
       log-symbols: 4.1.0
       meow: 10.1.2
@@ -4857,6 +4864,13 @@ packages:
 
   /pkg-dir/6.0.1:
     resolution: {integrity: sha512-C9R+PTCKGA32HG0n5I4JMYkdLL58ZpayVuncQHQrGeKa8o26A4o2x0u6BKekHG+Au0jv5ZW7Xfq1Cj6lm9Ag4w==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      find-up: 6.2.0
+    dev: true
+
+  /pkg-up/4.0.0:
+    resolution: {integrity: sha512-N4zdA4sfOe6yCv+ulPCmpnIBQ5I60xfhDr1otdBBhKte9QtEf3bhfrfkW7dTb+IQ0iEx4ZDzas0kc1o5rdWpYg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       find-up: 6.2.0

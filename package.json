@@ -1,6 +1,7 @@
 {
 	"name": "simple-vue-icon",
 	"version": "1.1.10",
+	"type": "module",
 	"description": "A simple icon component for Vue 3",
 	"main": "./index.js",
 	"prettier": "@leonzalion/configs/prettier",
@@ -48,7 +49,7 @@
 		"execa": "^6.0.0",
 		"jest": "^27.4.7",
 		"lint-staged": "^12.1.7",
-		"lionp": "^1.0.12",
+		"lionp": "^1.0.15",
 		"np": "^7.6.0",
 		"prettier": "^2.5.1",
 		"simple-git-hooks": "^2.7.0",
