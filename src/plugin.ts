@@ -9,7 +9,7 @@ export const getAttrs = (
 	props: ExtractPropTypes<typeof componentProps>,
 	attrs: Record<string, unknown>
 ) => {
-	const iconPath = props.path ?? mdiAlert;
+	const iconPath = props.icon ?? mdiAlert;
 
 	const spanAttrs = {
 		role: props.role,

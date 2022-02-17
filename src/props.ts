@@ -5,7 +5,7 @@ export const props = {
 	height: [Number, String],
 	ariaLabel: [String],
 	class: [String],
-	path: {
+	icon: {
 		type: String,
 	},
 	size: {

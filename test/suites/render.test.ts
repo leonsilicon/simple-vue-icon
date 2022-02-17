@@ -4,7 +4,7 @@ import { simpleVueIcon } from '~/plugin.js';
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const IconComponent = {
-	template: `<v-icon path="${mdiArrowLeft}" />`,
+	template: `<v-icon icon="${mdiArrowLeft}" />`,
 };
 
 test('mounts the icon', () => {
