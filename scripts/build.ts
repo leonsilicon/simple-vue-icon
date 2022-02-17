@@ -1,6 +1,8 @@
-import * as fs from 'node:fs';
+import fs from 'node:fs';
 import { execaCommandSync as exec } from 'execa';
+import { rmDist, copyPackageFiles } from 'lion-system';
 
-fs.rmSync('dist', { recursive: true, force: true });
+rmDist();
 exec('tsc');
-exec('cp src/icons.css readme.md package.json dist');
+copyPackageFiles();
+fs.copyFileSync('src/icons.css', 'dist/icons.css');
