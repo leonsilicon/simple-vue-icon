@@ -3,6 +3,7 @@
 	"include": [
 		"src",
 		"scripts",
+		".markdownlint.cjs",
 		".eslintrc.cjs",
 		"vitest.config.ts"
 	]
