@@ -4,6 +4,6 @@
 		"src",
 		"scripts",
 		".eslintrc.cjs",
-		"jest.config.mjs"
+		"vitest.config.ts"
 	]
 }
