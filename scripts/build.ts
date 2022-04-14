@@ -1,9 +1,9 @@
-import fs from 'node:fs';
 import { execaCommandSync as exec } from 'execa';
-import { chProjectDir, rmDist, copyPackageFiles } from 'lion-system';
+import { chProjectDir, copyPackageFiles, rmDist } from 'lion-system';
+import fs from 'node:fs';
 
 chProjectDir(import.meta.url);
 rmDist();
 exec('tsc');
-copyPackageFiles();
+await copyPackageFiles({ commonjs: { external: [/(.*).css$/, 'vue'] } });
 fs.copyFileSync('src/icons.css', 'dist/icons.css');

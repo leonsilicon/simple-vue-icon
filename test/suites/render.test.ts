@@ -1,9 +1,10 @@
-import { mount } from '@vue/test-utils';
 import { mdiArrowLeft } from '@mdi/js';
-import { test, expect } from 'vitest';
+import { mount } from '@vue/test-utils';
+import { expect,test } from 'vitest';
+
 import { simpleVueIcon } from '~/plugin.js';
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
+ 
 const IconComponent = {
 	template: `<v-icon icon="${mdiArrowLeft}" />`,
 };
