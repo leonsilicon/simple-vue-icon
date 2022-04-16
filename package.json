@@ -1,6 +1,6 @@
 {
 	"name": "simple-vue-icon",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"type": "module",
 	"description": "A simple icon component for Vue 3",
 	"exports": "./src/index.ts",
