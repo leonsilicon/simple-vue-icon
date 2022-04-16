@@ -1,7 +1,7 @@
 import './icons.css';
 
-import type { ExtractPropTypes,Plugin } from 'vue';
-import { h } from 'vue';  
+import type { DefineComponent, ExtractPropTypes, Plugin } from 'vue';
+import { h } from 'vue';
 
 import { props as componentProps } from './props.js';
 
@@ -70,3 +70,9 @@ export const simpleVueIcon: Plugin = {
 		});
 	},
 };
+
+declare module '@vue/runtime-core' {
+	export interface GlobalComponents {
+		VIcon: DefineComponent<typeof componentProps>;
+	}
+}
