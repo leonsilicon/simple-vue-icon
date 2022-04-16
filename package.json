@@ -43,10 +43,10 @@
 		"desm": "^1.2.0",
 		"execa": "^6.1.0",
 		"jsdom": "^19.0.0",
-		"lion-system": "^1.3.9",
+		"lion-system": "^1.3.11",
 		"typescript": "^4.6.3",
 		"vitest": "^0.9.3",
-		"vue": "^3.2.32"
+		"vue": "^3.2.33"
 	},
 	"peerDependencies": {
 		"vue": "^3"
