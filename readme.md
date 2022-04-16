@@ -27,7 +27,7 @@ Then, in your components, simply pass the path string:
 
 ```vue
 <template>
-  <v-icon :icon='mdiArrowLeft' />
+  <v-icon :icon="mdiArrowLeft" />
 </template>
 
 <script>
@@ -38,7 +38,7 @@ export default {
     return {
       mdiArrowLeft,
     };
-  }
+  },
 };
 </script>
 ```
@@ -47,7 +47,7 @@ or using `<script setup>` (recommended):
 
 ```vue
 <template>
-  <v-icon :icon='mdiArrowLeft' />
+  <v-icon :icon="mdiArrowLeft" />
 </template>
 
 <script setup>

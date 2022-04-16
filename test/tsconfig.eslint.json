@@ -1,8 +1,4 @@
 {
 	"extends": "./tsconfig.json",
-	"include": [
-		"suites",
-		"stubs",
-		".eslintrc.cjs"
-	]
+	"include": ["suites", "stubs", ".eslintrc.cjs"]
 }

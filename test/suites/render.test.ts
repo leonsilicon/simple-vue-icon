@@ -1,10 +1,9 @@
 import { mdiArrowLeft } from '@mdi/js';
 import { mount } from '@vue/test-utils';
-import { expect,test } from 'vitest';
+import { expect, test } from 'vitest';
 
 import { simpleVueIcon } from '~/plugin.js';
 
- 
 const IconComponent = {
 	template: `<v-icon icon="${mdiArrowLeft}" />`,
 };

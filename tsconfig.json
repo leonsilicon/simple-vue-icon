@@ -1,15 +1,9 @@
 {
 	"extends": "@leonzalion/configs/tsconfig.json",
 	"compilerOptions": {
-		"lib": [
-			"ESNext",
-			"DOM",
-			"DOM.Iterable"
-		],
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"outDir": "dist",
-		"baseUrl": "./src",
+		"baseUrl": "./src"
 	},
-	"include": [
-		"./src"
-	]
+	"include": ["./src"]
 }
