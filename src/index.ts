@@ -1,1 +1,1 @@
-export { simpleVueIcon as default } from './plugin.js';
+export { default } from './component.js';

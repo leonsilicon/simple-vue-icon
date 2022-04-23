@@ -12,28 +12,15 @@ Install the package from npm using your package manager (I recommend [pnpm](http
 pnpm add simple-vue-icon
 ```
 
-Then, add the plugin to where you create your Vue instance:
-
-```typescript
-import { createApp } from 'vue';
-import simpleVueIcon from 'simple-vue-icon';
-
-const app = createApp();
-app.use(simpleVueIcon);
-// ... adding other plugins and mounting the instance ...
-```
-
-Then, in your components, simply pass the path string:
+Then, import the icon to use it in your Vue components:
 
 ```vue
-<template>
-  <vue-icon :icon="mdiArrowLeft" />
-</template>
-
 <script>
 import { mdiArrowLeft } from '@mdi/js';
+import VueIcon from 'simple-vue-icon';
 
 export default {
+  components: { VueIcon },
   setup() {
     return {
       mdiArrowLeft,
@@ -41,18 +28,35 @@ export default {
   },
 };
 </script>
+
+<template>
+  <vue-icon :icon="mdiArrowLeft" />
+</template>
 ```
 
 or using `<script setup>` (recommended):
 
 ```vue
+<script setup>
+import { mdiArrowLeft } from '@mdi/js';
+import VueIcon from 'simple-vue-icon';
+</script>
+
 <template>
   <vue-icon :icon="mdiArrowLeft" />
 </template>
+```
 
-<script setup>
-import { mdiArrowLeft } from '@mdi/js';
-</script>
+If you don't want to import the component manually, you can register it globally in your app entrypoint:
+
+```typescript
+import { createApp } from 'vue'
+import App from './app.vue';
+import VueIcon from 'simple-vue-icon';
+
+const app = createApp(App);
+app.use('VueIcon', VueIcon);
+// ...
 ```
 
 ## Props

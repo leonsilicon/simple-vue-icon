@@ -1,7 +1,7 @@
 import './icons.css';
 
-import type { DefineComponent, ExtractPropTypes, Plugin } from 'vue';
-import { h } from 'vue';
+import type { ExtractPropTypes } from 'vue';
+import { defineComponent, h } from 'vue';
 
 import { props as componentProps } from './props.js';
 
@@ -45,31 +45,27 @@ function getClass(data: { class?: string }) {
 	return classes;
 }
 
-export const simpleVueIcon: Plugin = {
-	install(app) {
-		app.component('VIcon', {
-			name: 'VIcon',
-			props: componentProps,
-			render() {
-				const { spanAttrs, svgAttrs, pathAttrs } = getAttrs(this, this.$attrs);
+export default defineComponent({
+	name: 'VueIcon',
+	props: componentProps,
+	render() {
+		const { spanAttrs, svgAttrs, pathAttrs } = getAttrs(this, this.$attrs);
 
-				return h(
-					'span',
-					{
-						...spanAttrs,
-						class: getClass(this),
-					},
-					[
-						h('svg', svgAttrs, [
-							this.title ? h('title', [this.title]) : undefined,
-							h('path', pathAttrs),
-						]),
-					]
-				);
+		return h(
+			'span',
+			{
+				...spanAttrs,
+				class: getClass(this),
 			},
-		});
+			[
+				h('svg', svgAttrs, [
+					this.title ? h('title', [this.title]) : undefined,
+					h('path', pathAttrs),
+				]),
+			]
+		);
 	},
-};
+});
 
 declare module '@vue/runtime-core' {
 	export interface GlobalComponents {
