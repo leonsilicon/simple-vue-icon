@@ -6,13 +6,13 @@ A simple icon component for Vue 3.
 
 ## Installation
 
-Install the package from npm using your package manager (I recommend [pnpm](https://pnpm.io/)):
-
 ```shell
-pnpm add simple-vue-icon
+npm add simple-vue-icon
 ```
 
-Then, import the icon to use it in your Vue components:
+## Usage
+
+Import from `vue-simple-icon` to use the icon in your Vue components:
 
 ```vue
 <script>
@@ -47,7 +47,7 @@ import VueIcon from 'simple-vue-icon';
 </template>
 ```
 
-If you don't want to import the component manually, you can register it globally in your app entrypoint:
+If you don't want to import the component manually, you can register it globally in your app's entrypoint:
 
 ```typescript
 import { createApp } from 'vue';
