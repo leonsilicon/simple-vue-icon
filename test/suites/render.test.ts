@@ -2,7 +2,7 @@ import { mdiArrowLeft } from '@mdi/js';
 import { mount } from '@vue/test-utils';
 import { expect, test } from 'vitest';
 
-import { simpleVueIcon } from '~/plugin.js';
+import SimpleVueIcon from '~/index.js';
 
 const IconComponent = {
 	template: `<vue-icon icon="${mdiArrowLeft}" />`,
@@ -11,7 +11,7 @@ const IconComponent = {
 test('mounts the icon', () => {
 	const wrapper = mount(IconComponent, {
 		global: {
-			plugins: [simpleVueIcon],
+			components: { VueIcon: SimpleVueIcon },
 		},
 	});
 
