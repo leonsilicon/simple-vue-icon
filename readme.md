@@ -50,7 +50,7 @@ import VueIcon from 'simple-vue-icon';
 If you don't want to import the component manually, you can register it globally in your app entrypoint:
 
 ```typescript
-import { createApp } from 'vue'
+import { createApp } from 'vue';
 import App from './app.vue';
 import VueIcon from 'simple-vue-icon';
 
