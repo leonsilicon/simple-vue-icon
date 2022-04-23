@@ -38,7 +38,7 @@ export const getAttrs = (
 
 function getClass(data: { class?: string }) {
 	const classes: Record<string, boolean> = {
-		'v-icon': true,
+		'vue-icon': true,
 	};
 
 	if (data.class !== undefined) classes[data.class] = true;

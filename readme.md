@@ -27,7 +27,7 @@ Then, in your components, simply pass the path string:
 
 ```vue
 <template>
-  <v-icon :icon="mdiArrowLeft" />
+  <vue-icon :icon="mdiArrowLeft" />
 </template>
 
 <script>
@@ -47,7 +47,7 @@ or using `<script setup>` (recommended):
 
 ```vue
 <template>
-  <v-icon :icon="mdiArrowLeft" />
+  <vue-icon :icon="mdiArrowLeft" />
 </template>
 
 <script setup>
@@ -64,7 +64,7 @@ The [path string](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d) 
 ### width/height (number or string; default: 24)
 
 ```vue
-<v-icon :icon="mdiArrowLeft" width="30" :height="30" />
+<vue-icon :icon="mdiArrowLeft" width="30" :height="30" />
 ```
 
 ### size (number or string; default: 24)
@@ -72,8 +72,8 @@ The [path string](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d) 
 Sets the width and the height of the icon
 
 ```vue
-<!-- Equivalent to <v-icon :icon="mdiArrowLeft" width="64" height="64" /> -->
-<v-icon :icon="mdiArrowLeft" size="64" />
+<!-- Equivalent to <vue-icon :icon="mdiArrowLeft" width="64" height="64" /> -->
+<vue-icon :icon="mdiArrowLeft" size="64" />
 ```
 
 ## Credits

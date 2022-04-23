@@ -5,7 +5,7 @@ import { expect, test } from 'vitest';
 import { simpleVueIcon } from '~/plugin.js';
 
 const IconComponent = {
-	template: `<v-icon icon="${mdiArrowLeft}" />`,
+	template: `<vue-icon icon="${mdiArrowLeft}" />`,
 };
 
 test('mounts the icon', () => {
