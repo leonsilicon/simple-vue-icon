@@ -69,6 +69,6 @@ export default defineComponent({
 
 declare module '@vue/runtime-core' {
 	export interface GlobalComponents {
-		VIcon: DefineComponent<typeof componentProps>;
+		VueIcon: DefineComponent<typeof componentProps>;
 	}
 }
