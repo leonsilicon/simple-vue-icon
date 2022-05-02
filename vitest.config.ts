@@ -1,13 +1,13 @@
-import { join } from 'desm';
 import { defineConfig } from 'vitest/config';
+import { join } from 'desm';
 
 export default defineConfig({
 	resolve: {
 		alias: {
-			'~': join(import.meta.url, 'src'),
+			'~': join(import.meta.url, './src'),
 		},
 	},
 	test: {
-		environment: 'jsdom',
+		environment: 'happy-dom',
 	},
 });
