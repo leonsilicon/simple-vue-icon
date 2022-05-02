@@ -63,7 +63,7 @@
 	"publishConfig": {
 		"directory": "dist"
 	},
-	"dependencies": {
+	"devDependencies": {
 		"@rollup/plugin-typescript": "^8.3.2",
 		"rollup-plugin-dist-gitkeep": "^0.1.0",
 		"rollup-plugin-styles": "^4.0.0",
