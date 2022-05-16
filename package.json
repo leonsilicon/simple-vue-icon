@@ -30,43 +30,25 @@
 	"author": "Leon Si <contact@leonzalion.com>",
 	"license": "MIT",
 	"scripts": {
-		"lint": "eslint --cache --fix .",
 		"prepare": "lion-git-hooks",
-		"prettier": "prettier --write .",
-		"tc": "tsc --noEmit",
-		"build": "node-ts ./scripts/build.ts",
-		"test": "vitest run",
-		"release": "lionp"
+		"build": "node-ts ./scripts/build.ts"
 	},
 	"devDependencies": {
-		"@leonzalion/configs": "^1.2.33",
-		"@mdi/js": "^6.6.96",
-		"@types/node": "^17.0.31",
-		"@vitejs/plugin-vue": "^2.3.1",
-		"@vue/runtime-core": "^3.2.33",
-		"@vue/test-utils": "2.0.0-rc.21",
-		"desm": "^1.2.0",
-		"execa": "^6.1.0",
-		"happy-dom": "^3.1.0",
-		"jsdom": "^19.0.0",
-		"lion-system": "^1.3.25",
-		"rollup": "^2.71.1",
+		"@rollup/plugin-typescript": "^8.3.2",
+		"@types/node": "^17.0.33",
+		"lion-system": "^1.3.33",
+		"lionconfig": "^1.6.18",
+		"rollup": "^2.73.0",
+		"rollup-plugin-dist-gitkeep": "^0.1.0",
+		"rollup-plugin-styles": "^4.0.0",
+		"rollup-plugin-typescript2": "^0.31.2",
 		"tslib": "^2.4.0",
-		"typescript": "^4.6.4",
-		"vite": "^2.9.7",
-		"vitest": "^0.10.1",
-		"vue": "^3.2.33"
+		"typescript": "^4.6.4"
 	},
 	"peerDependencies": {
 		"vue": "^3"
 	},
 	"publishConfig": {
 		"directory": "dist"
-	},
-	"devDependencies": {
-		"@rollup/plugin-typescript": "^8.3.2",
-		"rollup-plugin-dist-gitkeep": "^0.1.0",
-		"rollup-plugin-styles": "^4.0.0",
-		"rollup-plugin-typescript2": "^0.31.2"
 	}
 }
