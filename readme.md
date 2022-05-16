@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-  <vue-icon :icon="mdiArrowLeft" />
+  <VueIcon :icon="mdiArrowLeft" />
 </template>
 ```
 

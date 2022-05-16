@@ -11,6 +11,7 @@ const IconComponent = {
 test('mounts the icon', () => {
 	const wrapper = mount(IconComponent, {
 		global: {
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 			components: { VueIcon: SimpleVueIcon },
 		},
 	});
