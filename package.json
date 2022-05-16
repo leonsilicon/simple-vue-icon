@@ -43,7 +43,8 @@
 		"rollup-plugin-styles": "^4.0.0",
 		"rollup-plugin-typescript2": "^0.31.2",
 		"tslib": "^2.4.0",
-		"typescript": "^4.6.4"
+		"typescript": "^4.6.4",
+		"vue": "^3.2.33"
 	},
 	"peerDependencies": {
 		"vue": "^3"
